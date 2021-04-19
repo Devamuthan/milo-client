@@ -1,0 +1,148 @@
+.set-questions {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "question";
+}
+
+.set-questions .header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.set-questions .question {
+    grid-area: question;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "subject title admin" "form form form";
+}
+
+.set-questions .set-subject {
+    grid-area: subject;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.set-questions .set-subject input {
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+}
+
+.set-questions .title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.set-questions .admin-id {
+    grid-area: admin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-questions .form {
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "quest" "opt1" "opt2" "opt3" "opt4" "ans" "buttons";
+}
+
+.set-questions .form .question-container {
+    grid-area: quest;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-questions .form .options1-container {
+    grid-area: opt1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-questions .form .options2-container {
+    grid-area: opt2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-questions .form .options3-container {
+    grid-area: opt3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-questions .form .options4-container {
+    grid-area: opt4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-questions .form .answer-container {
+    grid-area: ans;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.set-questions .form .buttons {
+    grid-area: buttons;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.set-questions .form .question-container .label,
+.set-questions .form .options1-container .label,
+.set-questions .form .options2-container .label,
+.set-questions .form .options3-container .label,
+.set-questions .form .options4-container .label,
+.set-questions .form .answer-container .label {
+    width: 100px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.set-questions .form .question-container textarea,
+.set-questions .form .options1-container input,
+.set-questions .form .options2-container input,
+.set-questions .form .options3-container input,
+.set-questions .form .options4-container input,
+.set-questions .form .answer-container input{
+    width: 60%;
+    height: 50px;
+}
+
+.set-questions .form .buttons .next-button button,
+.set-questions .form .buttons .submit-button button{
+    height: 40px;
+    width: 150px;
+    font-size: 1.3em;
+    background: white;
+    cursor: pointer;
+}
+
+.set-questions .form .display-url{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

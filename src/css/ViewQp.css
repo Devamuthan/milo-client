@@ -1,0 +1,76 @@
+.view-questions {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 80px;
+    grid-template-areas: "header" "questions" "footer";
+}
+
+.view-questions .header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-questions .header .title,
+.view-questions .header .sub-code{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-questions .header .title{
+    font-size: 3em;
+}
+
+.view-questions .header .sub-code{
+    font-size: 1.4em;
+}
+
+.view-questions .questions {
+    grid-area: questions;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.view-questions .questions .question-comp{
+    height: 100px;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "comp-ques comp-ques" "opt1 opt2" "opt3 opt4";
+}
+
+.view-questions .questions .question-comp .question {
+    grid-area: comp-ques
+}
+.view-questions .questions .question-comp .opt1 {
+    grid-area: opt1
+}.view-questions .questions .question-comp .opt2 {
+    grid-area: opt2
+}.view-questions .questions .question-comp .opt3 {
+    grid-area: opt3
+}.view-questions .questions .question-comp .opt4 {
+    grid-area: opt4
+}
+
+.view-questions .footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.view-questions .footer .next button,
+.view-questions .footer .back button{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}

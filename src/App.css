@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+boyd{
+    height: 100%;
+    width: 100%
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+}
